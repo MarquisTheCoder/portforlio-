@@ -1,6 +1,5 @@
 
 
-import React from "react"
 import styled from "styled-components"
 import Contact from "./components/Contact"
 import Hero from "./components/Hero"
@@ -17,10 +16,11 @@ function App() {
 
   return (  
     <Container>
-      <Hero/>
-      <Who/>
-      <Works/>
-      <Contact/>
+      <Hero />
+      <Who />
+      <Works />
+      <Contact />
+
     </Container>
   )
 
