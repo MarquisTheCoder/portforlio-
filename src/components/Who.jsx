@@ -2,11 +2,10 @@ import React from "react"
 import styled from "styled-components"
 
 const Section = styled.div`
-  background-color: rgb(62, 135, 184);
   scroll-snap-align: center;
-  scroll-snap-stop: always;
+  background-color: transparent;
   height: 100vh;
-  width: auto;
+  width: 100vw;
 `;
 
 function Who(){
