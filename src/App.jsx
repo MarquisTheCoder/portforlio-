@@ -8,22 +8,18 @@ import Who from "./components/Who"
 import Works from "./components/Works"
 
 const Container = styled.div`
-  height: 100vh;
-  color: black;
   background-color: rebeccapurple;
+  height: 100vh;
 `
-
 function App() {
 
-  return (  
-    <Container >
-
+  return (
+    <Container>
       <Hero />
       <Who />
       <Works />
       <Contact />
-
-    </Container >
+    </Container>
   )
 }
 
