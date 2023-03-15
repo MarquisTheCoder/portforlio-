@@ -1,5 +1,4 @@
 
-import React from "react"
 import styled from "styled-components"
 
 import Contact from "./components/Contact"
@@ -8,11 +7,20 @@ import Who from "./components/Who"
 import Works from "./components/Works"
 
 const Container = styled.div`
-  background-color: rebeccapurple;
   height: 100vh;
-`
-function App() {
+  background-color: black; 
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  &::-webkit-scrollbar{
+    display: none;
+  }
+  overflow-y: auto;
+  color: white;
+  background: url("./img/bg.jpg");
+`;
 
+function App() {
   return (
     <Container>
       <Hero />
