@@ -11,7 +11,7 @@ const Section = styled.div`
 
 //secondary nav block used to position elements
 const Container = styled.div`
-   width: 900px;
+   width: 1200px;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -26,27 +26,42 @@ const Logo = styled.img`
 const MainLinks = styled.div`
     display: flex;
     align-items: center;
-    gap: 35px;
+    gap: 45px;
 `;
 const List = styled.ul`
     display: flex;
     gap: 12px;
     list-style: none;
 `;
-const ListItem= styled.li``;
+const ListItem= styled.li`
+    margin-bottom: 5px;
+    cursor: pointer;
+    :hover{
+        text-decoration: underline;
+    }
+`;
 
 // icon and button section
 const MainIcons = styled.div`
     display: flex;
     align-items: center;
-    gap: 35px;
+    gap: 45px;
 `;
 
 const SearchIcon = styled.img`
     height: 20px;
+    cursor: pointer;
 `;
 
-const Button = styled.button``;
+const Button = styled.button`
+    width: 100px;
+    padding: 8px;
+    background-color: rgb(170, 145, 215);
+    border: none;
+    border-radius: 10px;
+    color: #02157d;
+    cursor: pointer;
+`;
 
 
 function Navbar(){
@@ -66,7 +81,7 @@ function Navbar(){
                 </MainLinks>
 
                 <MainIcons>
-                    <SearchIcon src="./img/searchbar.png"/>
+                    <SearchIcon src="./img/white-icon.png"/>
                     <Button>Hire Marqius</Button>
                 </MainIcons>
            </Container>
