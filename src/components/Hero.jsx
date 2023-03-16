@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "selenium-webdriver";
 import styled from "styled-components";
 import Navbar from "./Navbar";
 
@@ -11,9 +12,16 @@ const Section = styled.div`
   justify-content: space-between;
 `;
 
+const Container = styled.div`
+  height: 100vh;
+  scroll-snap-align: center;
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+`;
+
 const Left = styled.div``;
 const Right = styled.div``;
-const Container = styled.div``;
 const Title = styled.div``;
 const What = styled.div``;
 const Line = styled.div``;
