@@ -1,7 +1,6 @@
-import React from "react"
-import styled from "styled-components"
+import React from "react";
+import styled from "styled-components";
 import Navbar from "./Navbar";
-
 
 const Section = styled.div`
   scroll-snap-align: center;
@@ -13,17 +12,17 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
-   height: 100px;
-   width: 1200px;
-   justify-content: space-between;
-`
-function Hero(){
-    return(
-        <Section>
-           <Navbar />
-           <Container>Hero</Container>
-        </Section>
-    )
+  height: 100px;
+  width: 1200px;
+  justify-content: space-between;
+`;
+function Hero() {
+  return (
+    <Section>
+      <Navbar />
+      <Container></Container>
+    </Section>
+  );
 }
 
-export default Hero
+export default Hero;
