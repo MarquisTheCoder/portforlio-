@@ -24,7 +24,6 @@ const Left = styled.div``;
 const Right = styled.div``;
 const Title = styled.div``;
 const What = styled.div``;
-const Line = styled.div``;
 const Subtitle = styled.div``;
 
 function Hero() {
@@ -35,11 +34,10 @@ function Hero() {
         <Left>
           <Title>Plan. Prepare. Execute</Title>
           <What>
-            <Line />
             <Subtitle>What I do</Subtitle>
           </What>
         </Left>
-        <Right> </Right>
+        <Right></Right>
       </Container>
     </Section>
   );
