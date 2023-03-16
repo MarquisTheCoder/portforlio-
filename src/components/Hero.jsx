@@ -11,16 +11,28 @@ const Section = styled.div`
   justify-content: space-between;
 `;
 
-const Container = styled.div`
-  height: 100px;
-  width: 1200px;
-  justify-content: space-between;
-`;
+const Left = styled.div``;
+const Right = styled.div``;
+const Container = styled.div``;
+const Title = styled.div``;
+const What = styled.div``;
+const Line = styled.div``;
+const Subtitle = styled.div``;
+
 function Hero() {
   return (
     <Section>
       <Navbar />
-      <Container></Container>
+      <Container>
+        <Left>
+          <Title>Plan. Prepare. Execute</Title>
+          <What>
+            <Line />
+            <Subtitle>What I do</Subtitle>
+          </What>
+        </Left>
+        <Right> </Right>
+      </Container>
     </Section>
   );
 }
