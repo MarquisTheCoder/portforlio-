@@ -19,6 +19,7 @@ const What = styled.div``;
 const Line = styled.div``;
 const Subtitle = styled.div``;
 
+// making the hero section for the website
 function Hero() {
   return (
     <Section>
