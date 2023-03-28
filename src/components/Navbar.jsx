@@ -10,7 +10,7 @@ const Section = styled.div`
 
 //secondary nav block used to position elements
 const Container = styled.div`
-  width: 1200px;
+  width: 85vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,11 +28,13 @@ const MainLinks = styled.div`
 `;
 const List = styled.ul`
   display: flex;
-  gap: 12px;
+  gap: 10px;
   list-style: none;
 `;
 const ListItem = styled.li`
   margin-bottom: 5px;
+  font-weight: 300;
+  font-size: 16px;
   cursor: pointer;
   :hover {
     text-decoration: underline;
@@ -59,6 +61,7 @@ const Button = styled.button`
   border-radius: 10px;
   color: #02157d;
   cursor: pointer;
+  font-size: 0.8rem;
 `;
 
 //setting the navbar component for styling purposes later

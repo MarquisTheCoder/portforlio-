@@ -1,5 +1,5 @@
-import React from "react"
-import styled from "styled-components"
+import React from "react";
+import styled from "styled-components";
 
 const Section = styled.div`
   scroll-snap-align: center;
@@ -8,10 +8,15 @@ const Section = styled.div`
   width: 100vw;
 `;
 
-function Who(){
-    return (
-        <Section>Who</Section>
-    )
+const focusPoints = [
+  "Development",
+  "Design",
+  "Marketing",
+  "Product Management",
+];
+
+function Who() {
+  return <Section></Section>;
 }
 
-export default Who
+export default Who;
