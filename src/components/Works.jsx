@@ -28,7 +28,7 @@ const Left = styled.div`
     width: 100vw;
     height: 250px;
     width: 250px;
-    justify-content: center
+    justify-content: center;
     align-items: center;
   }
 `;
