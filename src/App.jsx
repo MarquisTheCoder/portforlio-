@@ -23,8 +23,8 @@ function App() {
   return (
     <Container>
       <Hero />
-      <Who />
       <Works />
+      <Who />
       <Contact />
     </Container>
   );

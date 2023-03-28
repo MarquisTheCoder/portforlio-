@@ -19,6 +19,11 @@ const Container = styled.div`
   display: flex;
   gap: 50px;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column-reverse !important;
+  }
 `;
 
 const Left = styled.div`
@@ -27,9 +32,16 @@ const Left = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+
+  @media (max-width: 768px) {
+   z-index: 3;
+  }
 `;
 const Right = styled.div`
   flex: 3;
+  @media (max-width: 768px) {
+    position: relative;
+  } 
 `;
 const Title = styled.div`
   font-size: 74px;
@@ -75,6 +87,13 @@ const Button = styled.button`
 
 const Image = styled.img`
   height: 700px;
+ @media (max-width: 768px) {
+    height: 500px;
+    position: absolute;
+    top: -100px;
+    left: -40px;
+
+  } 
 `;
 
 // making the hero section for the website
@@ -84,7 +103,7 @@ function Hero() {
       <Navbar />
       <Container>
         <Left>
-          <Title>Plan. Prepare. Execute</Title>
+          <Title>Plan. Prepare. Execute.</Title>
           <What>
             <Line />
             {/* <Subtitle>What I do</Subtitle> */}
@@ -96,7 +115,7 @@ function Hero() {
         </Left>
         <Right>
           {/* {3d model} */}
-          <Image src="./img/dollarbomb.png" />
+          <Image src="./img/earth.png" />
         </Right>
       </Container>
     </Section>
