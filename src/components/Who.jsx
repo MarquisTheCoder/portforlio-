@@ -8,6 +8,9 @@ const Section = styled.div`
   width: 100vw;
 `;
 
+const Image = styled.img`
+  width: 400px;
+`;
 const focusPoints = [
   "Development",
   "Design",
@@ -16,7 +19,9 @@ const focusPoints = [
 ];
 
 function Who() {
-  return <Section></Section>;
+  return <Section>
+    <Image src="./img/projects.png"/>
+  </Section>;
 }
 
 export default Who;
