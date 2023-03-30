@@ -26,7 +26,7 @@ function App() {
       <Works />
       <Who />
       <Contact />
-    </Container>
+    </ Container>
   );
 }
 
