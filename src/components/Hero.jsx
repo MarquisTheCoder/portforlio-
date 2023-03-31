@@ -1,5 +1,4 @@
 import React from "react";
-// import { Button } from "selenium-webdriver"
 import styled from "styled-components";
 import Navbar from "./Navbar";
 
