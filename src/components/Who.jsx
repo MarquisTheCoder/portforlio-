@@ -23,10 +23,9 @@ const Heading = styled.h1`
 `;
 const Content = styled.div`
 display: flex;
-justify-content: center;
 align-items: center;
 width: 99%;
-height: 50%;
+height: 100%;
 padding: 1px;
 gap: 3vw;
 overflow-x: scroll;
@@ -38,10 +37,12 @@ const Image = styled.img`
 `;
 
 const ProjectImage = styled.img`
-height: 400px;
-width: auto;
+width: 80vw;
+height: auto;
+flex-shrink: none;
 padding-bottom: 100px;
 `;
+
 const focusPoints = [
   "Development",
   "Design",
@@ -51,7 +52,6 @@ const focusPoints = [
 
 const allProjectImages = [
   "./img/projects/lisa.png",
-  "./img/projects/lisa.png",
   "./img/projects/mami.png",
   "./img/projects/profile_venued.png",
   "./img/projects/venued.png",
@@ -60,10 +60,7 @@ const allProjectImages = [
 function Who() {
   return (
   <Section>
-    <Container>
-      <Content>
-        <Heading>What I Can Do</Heading>
-      </Content>
+    <Container> 
       <Content>
         {allProjectImages.map((image, index) => <ProjectImage key={index} src={image} />)}
       </Content>
